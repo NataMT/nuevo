@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>manipulating styles
+
+    </title>
+</head>
+
+<body>
+
+    <p id="texto">Holiwi</p>
+
+    <button id="botoncin">Cambiar texto</button>
+
+    <p id="segundo">Javascript es </p>
+    <button id="boton2">Concatenar texto</button>
+
+    <p id="vacio"><br></p>
+
+    <button id="crear">crear texto</button>
+
+    <p id="otro">Mas texto</p>
+    <button id="style">Estilo</button>
+
+    <script type="text/javascript">
+        document.getElementById("botoncin").onclick = function () {
+            document.getElementById("texto").innerHTML = "Hola Pirinolas";
+        }
+
+        document.getElementById("boton2").onclick = function () {
+            document.getElementById("segundo").innerHTML = "Creo que " + document.getElementById("segundo")
+                .innerHTML + "genial";
+        }
+
+        document.getElementById("crear").onclick = function () {
+            document.getElementById("vacio").innerHTML = (
+                "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                )
+        }
+
+
+        document.getElementById("style").onclick = function(){
+
+            document.getElementById("otro").style.color= "blue";
+            document.getElementById("otro").style.fontSize="12px";
+            
+        }
+
+    </script>
+
+
+</body>
+
+</html>

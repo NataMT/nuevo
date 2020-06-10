@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loopyloopy</title>
+</head>
+<body>
+
+    <div id="twit"></div>
+
+
+    <script type="text/javascript">
+
+    var twitString = "";
+    
+    var tweets= ["Mornin' everyone", "I love coffee", "Have an excelent week"];
+
+    for( var i=0; i< tweets.length ; i++){  // tweets.lentgh itera por la cantidad de tweets que tenga el arreglo
+       
+       //lee el string declarado arriba, agregando p + el array + p, los mostrará verticalmente en la pantalla
+        twitString= twitString + "<p>" + tweets[i] + "</p>" 
+
+       document.getElementById("twit").innerHTML=twitString
+
+    }
+    
+    </script>
+    
+</body>
+</html>

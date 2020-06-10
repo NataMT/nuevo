@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jueguito</title>
+</head>
+
+<body>
+
+
+    <p>Adivina cuántos dedos estoy levantando</p>
+    <input id="dedos" type="text" required>
+
+    <button id="boton" type="submit">Adivina!!</button>
+
+
+    <script type="text/javascript">
+        document.getElementById("boton").onclick = function () {
+            var ingreso = document.getElementById("dedos").value;
+
+            var random = Math.floor(Math.random() * 11);
+
+            if (ingreso == random) {
+                alert('Acertaste!!!');
+
+            } else {
+                alert('Nope, intenta de nuevo! El número era: ' + random)
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
